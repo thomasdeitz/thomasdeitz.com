@@ -1,0 +1,62 @@
+@import '_shared/scss/grid';
+
+body{
+  font-family: "Helvetica";
+  text-align: center;
+  padding: 0;
+  background: #f4f4f7;
+  color: #444;
+  margin: 0;
+}
+
+header {
+	position:relative;
+	display: flex;
+	box-sizing:border-box;
+	flex-direction: column;
+	flex-flow: wrap;
+	justify-content: center;
+	height: 100vh;
+	padding: 8vh 0;
+	background-color: black;
+	color: white;
+	transform: skewY(-5deg);
+	transform-origin: top left;
+	overflow:hidden;
+	
+	.image {
+		background:url(https://static.pexels.com/photos/414513/pexels-photo-414513.jpeg);
+		background-color: red;
+		background-size: cover;
+		position:absolute;
+		top:0px;
+		left:0px;
+		height:100vh;
+		width:100vw;
+		margin:0px;
+		opacity:.4;
+	}
+	
+	
+	> * {
+		align-self: center;
+		transform-origin: bottom left;
+		transform: skewY(5deg);
+
+	}
+}
+
+h1{
+font-family: "Roboto Slab", Georgia, "Times New Roman";
+  font-weight: bold;
+}
+
+h3{
+
+}
+
+ul {position:absolute;}
+
+.test {
+	
+}

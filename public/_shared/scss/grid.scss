@@ -1,0 +1,72 @@
+
+$grid-config: (
+  columns: 12,
+  gutter-width: 4%
+);
+
+$on-desktop: 1280px;
+$on-laptop: 1024px;
+$on-palm: 768px;
+
+$breakpoints: ( //list small to large.
+  sm : ( ul: $on-palm ),
+  md : ( ll: $on-palm, ul: #{$on-laptop} - 1 ),
+  lg : ( ll: $on-laptop, ul: #{$on-desktop} - 1 ),
+  xl : ( ll: $on-desktop )
+);
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  min-width: 300px;
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  [class^="col"] {
+    width: 100% - map-get($grid-config, gutter-width);
+
+    @for $i from 1 through map-get($grid-config, columns) {
+      $class: '.columns-'+$i;
+      $base-column-width: (100%/map-get($grid-config, columns))*$i;
+      $column-width: $base-column-width - map-get($grid-config, gutter-width);
+      
+      &#{$class} {
+        width: $column-width;
+      }
+
+      @each $size, $map in $breakpoints { 
+        $ll: map-get($map, ll);
+        $ul: map-get($map, ul);
+        $isSmallest: map-has-key($map, ul) and not(map-has-key($map, ll));
+        $isLargest: map-has-key($map, ll) and not(map-has-key($map, ul));
+        $responsize-class: '.col-'+$size+'-'+$i;
+        
+        
+          @if ($isSmallest) {
+            @media screen and (max-width: $ul) {
+              &#{$responsize-class} {
+                width: $column-width;
+              }
+            }
+          } @else if ($isLargest) {
+            @media screen and (min-width: $ll) {
+              &#{$responsize-class} {
+                width: $column-width;
+              }
+            }
+          } @else {
+            @media screen and (min-width: $ll) and (max-width: $ul ) {
+              &#{$responsize-class} {
+                width: $column-width;
+              }
+            }
+          
+        }
+      }
+    }
+  }
+}
