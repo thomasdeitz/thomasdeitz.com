@@ -1,0 +1,15 @@
+{
+  "name": "thomasdeitz.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "harp server --port $PORT",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "harp": "^0.25.0"
+  }
+}
