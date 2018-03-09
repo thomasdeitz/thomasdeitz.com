@@ -4,10 +4,10 @@
   	"description": "Collaboratively developed experiences that delight and empower users.",
   	"projects": [
     	{
-      	"slug": "cousins"
+      	"slug": "cousins",
       	"name": "Cousins Subs",
       	"role": "Collaborative Design & Front-end",
-      	"goal": "Create a new online presence allowing Cousins Subs to highlight their brand and allowing their users to easily place online orders via multiple device form factors."
+      	"goal": "Create a new online presence allowing Cousins Subs to highlight their brand and allowing their users to easily place online orders via multiple device form factors.",
       	"activities": [
         	"Workflows",
         	"Collaborative Design Sessions",
@@ -18,10 +18,10 @@
       	]
     	},
     	{
-      	"slug": "whio"
+      	"slug": "whio",
       	"name": "WHIO",
       	"role": "Research, Development & Usability",
-      	"goal": "Create a new data entry portal that allows for easier access to important data, ability to swop task responsibilities & clear identification of task needing attention from the user."
+      	"goal": "Create a new data entry portal that allows for easier access to important data, ability to swop task responsibilities & clear identification of task needing attention from the user.",
       	"activities": [
         	"Proto-personas",
         	"User Research",
@@ -31,25 +31,25 @@
         	"Mockups",
         	"Icon & Asset Creation",
         	"Front-end Development"
-      	],
+      	]
     	},
     	{
-      	"slug": "schutzman"
+      	"slug": "schutzman",
       	"name": "A.L. Schutzman",
       	"role": "Project Discovery",
-      	"goal": "Assess current system, identify areas for improvement & recomend best course of action moving forward."
+      	"goal": "Assess current system, identify areas for improvement & recomend best course of action moving forward.",
       	"activities": [
           "Proto-personas",
           "User Research",
           "Workflows, User Journeys",
           "Current & Competitor Hueristics"
-      	],
+      	]
     	},
     	{
-      	"slug": "goodwill"
+      	"slug": "goodwill",
       	"name": "Goodwill of S.E. WI",
       	"role": "Research, Development & Usability",
-      	"goal": "Design an modern application that will improve efficiency & accuracy while reducing duplicate work and saving time."
+      	"goal": "Design an modern application that will improve efficiency & accuracy while reducing duplicate work and saving time.",
       	"activities": [
         	"Proto-personas",
         	"User Research",
@@ -61,13 +61,13 @@
         	"Front-end Development",
         	"Usability Assessments",
         	"Feedback Prioritization"
-      	],
+      	]
     	},
     	{
-      	"slug": "cuna"
+      	"slug": "cuna",
       	"name": "Cuna Mutual",
       	"role": "Prototyping & Usability",
-      	"goal": "Identify, design and validate approach for future application feature enhancements."
+      	"goal": "Identify, design and validate approach for future application feature enhancements.",
       	"activities": [
         	"Proto-personas",
         	"User Journeys",
@@ -79,10 +79,10 @@
       	]
     	},
     	{
-      	"slug": "generac"
+      	"slug": "generac",
       	"name": "Generac",
       	"role": "Research, Development & Usability",
-      	"goal": "Enhance iOS based sales platform, delivering a new UI that provides a modern experience instilling confidence while maintaining and improving usability."
+      	"goal": "Enhance iOS based sales platform, delivering a new UI that provides a modern experience instilling confidence while maintaining and improving usability.",
       	"activities": [
         	"Proto-personas",
         	"Collaborative Design Sessions",
@@ -91,7 +91,7 @@
         	"Icon & Asset Creation",
         	"Usability Assessments",
           "Feedback Prioritization"
-      	],
+      	]
     	}
   	]
   }
