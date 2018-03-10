@@ -1,0 +1,49 @@
+a {
+  width: calc(33% - 30px); // remove
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  figure {
+    position: relative;
+    display: block;
+    margin: 0;
+    height: 260px;
+    background-color: #48a79d;
+    font-weight: 300;
+
+    img {
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      opacity: .5;
+      transition: opacity .3s;
+    }
+
+    figcaption {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.25);
+      color: white;
+      transition: transform .3s;
+    }
+  }
+
+  &:hover figcaption {
+    transform: translateY(100%);
+  }
+
+  &:hover img {
+    opacity: 1;
+  }
+
+  &:active img {
+    opacity: .5;
+  }
+}

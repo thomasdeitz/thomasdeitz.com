@@ -1,4 +1,6 @@
-@import '_shared/scss/grid';
+@import '_components/scss/grid';
+
+@import '_components/project/index.scss';
 
 body{
   font-family: "Helvetica";

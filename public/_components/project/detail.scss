@@ -1,0 +1,44 @@
+  figure > section {
+    line-height: 1.75em;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: scroll;
+    color: white;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    z-index: 1000; }
+    figure > section div {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      height: auto;
+      min-width: 300px;
+      width: 80%;
+      max-width: 1200px;
+      margin: 45px auto 45px auto; }
+    figure > section section {
+      float: left;
+      text-align: center;
+      margin: 15px calc( 15px + 25%);
+      width: calc(50% - 30px); }
+    figure > section h1 + p {
+      margin-top: 1em; }
+    figure > section p + h2 {
+      margin-top: 1em; }
+    figure > section img {
+      float: left;
+      margin: 15px; }
+      figure > section img:last-of-type + section {
+        border-top: 1px solid white;
+        padding-top: 30px; }
+      figure > section img:nth-of-type(1) {
+        width: calc(100% - 30px); }
