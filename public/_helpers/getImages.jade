@@ -1,2 +1,6 @@
-- var images = public.assets.images[slug]._contents;
+//- _helpers/getImages.jade
+
+//- slug => string
+
+- var images = slug ? public.assets.images[slug]._contents : public.assets.images._contents;
 - return images

@@ -1,8 +1,12 @@
+//- _components/header/index.jade
+
+- var images = partial("../../_helpers/getImages")
+
 header.marquee
   .container
-    div
-      h3 Thomas Deitz
-      h1 UX
-      h4 Collaboratively developed experiences 
-        br
-        | that delight and empower users.
+    h3 Thomas Deitz
+    h1 UX
+    h4 Collaboratively developed experiences 
+      br
+      | that delight and empower users.
+  img(src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" name="#{title}" style="background-image: url(./assets/images/#{images[0]});")
