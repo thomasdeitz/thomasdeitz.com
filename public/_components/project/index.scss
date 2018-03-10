@@ -1,46 +1,74 @@
 a {
-  width: calc(33% - 30px); // remove
+  width: calc(33% - 30px);
+  height: 260px; // remove
   display: block;
   position: relative;
   overflow: hidden;
+  margin: 15px;
+
 
   figure {
-    position: relative;
+    position: absolute;
     display: block;
-    margin: 0;
-    height: 260px;
-    background-color: #48a79d;
-    font-weight: 300;
+    top:0px;
+    left:0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    
+    &:after {
+      content: "";
+      display:block;
+      position:absolute;
+      background-color: #48a79d;
+      height: calc(100px + 50px);
+      width: 100%;
+      transform: translateY(150%) skewY(-8deg);
+      bottom:0px;
+      transition: transform .3s;
+    }
 
     img {
-      position: relative;
+      filter: grayscale(100%);
+      position: absolute;
+      display:block;
+      top:0px;
+      left:0px;
+      background-color:red;
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
       height: 100%;
       width: 100%;
-      opacity: .5;
-      transition: opacity .3s;
     }
 
     figcaption {
+      font-weight: 300;
       position: absolute;
       right: 0px;
       bottom: 0px;
       left: 0px;
       padding: 15px;
-      background-color: rgba(0, 0, 0, 0.25);
       color: white;
-      transition: transform .3s;
+      transform: translateX(100%);
+      transition: transform .2s .1s;
+      z-index: 10;
     }
   }
-
+  
+  &:hover {
+    figure:after {
+      transform: translateY(20%) skewY(-8deg);
+    }
+  }
+  
   &:hover figcaption {
-    transform: translateY(100%);
+    transform: translateY(0);
   }
 
   &:hover img {
-    opacity: 1;
+    filter: grayscale(0%);
+    background-color: #336e7b;
   }
 
   &:active img {
