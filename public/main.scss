@@ -1,12 +1,15 @@
 @import '_components/scss/grid';
 
 @import '_components/header/index.scss';
+
 @import '_components/project/index.scss';
+@import '_components/project/detail.scss';
 
 body{
-  font-family: "Helvetica";
+  font-family: "Lora", Georgia, "Times New Roman";
   text-align: center;
   padding: 0;
+  font-weight: 400;
   background: #f4f4f7;
   color: #444;
   margin: 0;
@@ -17,16 +20,6 @@ footer, main {
 }
 
 h1{
-font-family: "Roboto Slab", Georgia, "Times New Roman";
+  font-family: "Roboto Slab", Georgia, "Times New Roman";
   font-weight: bold;
-}
-
-h3{
-
-}
-
-ul {position:absolute;}
-
-.test {
-	
 }
