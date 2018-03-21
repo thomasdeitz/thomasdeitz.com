@@ -3,13 +3,13 @@ html
   head
     title= title
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
-    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:700")
-    link(rel="stylesheet" href="./main.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,500|Bree+Serif|Alegreya:400:700|Libre+Baskerville|Patua+One")
+    link(rel="stylesheet" href="./assets/main.css")
 
   body
-    != partial("./_components/header/index")
+    != partial("./_mixins/header/index")
     main: != yield
-    != partial("./_components/footer/index")
+    != partial("./_mixins/footer/index")
     
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

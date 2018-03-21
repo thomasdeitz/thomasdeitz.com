@@ -1,0 +1,20 @@
+//- _mixins/project/project.jade
+
+//- slug => string
+//- name => string
+//- role => string
+//- goal => sttring
+//- activities => array of strings
+//- images => array of strings
+
+- const images = partial("../../_helpers/getImages")
+
+a(href="##{slug}")
+  figure
+    img(
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+      alt="#{name}" 
+      style="background-image: url(./assets/images/#{slug}/#{images[0]});")
+    figcaption
+      h2= name
+      span= role

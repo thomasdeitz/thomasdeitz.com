@@ -2,7 +2,7 @@
 
 div.container(style="display: flex;")
   for project in projects
-    != partial("./_components/project/index", project)
+    != partial("./_mixins/project/index", project)
 
-  for project in projects
-    != partial("./_components/project/detail", project)
+  //- for project in projects
+    //- != partial("./_mixins/project/detail", project)
