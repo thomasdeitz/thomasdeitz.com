@@ -1,0 +1,24 @@
+{
+  "globals": {
+    "title": "Thomas Deitz",
+    "description": "",
+    "navs": [
+      {
+        "slug": "/",
+        "label": "Home"
+      },
+      {
+        "slug": "/work",
+        "label": "Work"
+      },
+      {
+        "slug": "/profile",
+        "label": "Profile"
+      },
+      {
+        "slug": "/contact",
+        "label": "Contact"
+      }
+    ]
+  }
+}

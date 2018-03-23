@@ -2,7 +2,21 @@
   "index": {
   	"title": "Thomas J Deitz - UX",
   	"description": "Collaboratively developed experiences that delight and empower users.",
-  	"projects": [
+		"quotes": [
+			{
+				"quote": "Tom has a stellar outlook, work ethic, and approach to teamwork. He is always positive, providing feedback to the team on all aspects of work. Tom's level of quality is extremely high, producing front-end programming, responsive web design and UI troubleshooting that is not matched. I enjoy being on a team with Tom.",
+				"quotee": ""
+			},
+			{
+				"quote": "Tom has a stellar outlook, work ethic, and approach to teamwork. He is always positive, providing feedback to the team on all aspects of work. Tom's level of quality is extremely high, producing front-end programming, responsive web design and UI troubleshooting that is not matched. I enjoy being on a team with Tom.",
+				"quotee": ""
+			},
+			{
+				"quote": "Tom has a stellar outlook, work ethic, and approach to teamwork. He is always positive, providing feedback to the team on all aspects of work. Tom's level of quality is extremely high, producing front-end programming, responsive web design and UI troubleshooting that is not matched. I enjoy being on a team with Tom.",
+				"quotee": ""
+			}
+		],
+		"projects": [
     	{
       	"slug": "cousins",
       	"name": "Cousins Subs",
