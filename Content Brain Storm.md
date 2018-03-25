@@ -23,11 +23,27 @@
 * Brewing and Vinting
 
 ### Projects
+*Socialeads*
+UX/UI, Brand Development, Prototyping Front-end Development
+THe goal was to create a compelling idea and interface for Socialeads in the 2017/2018 Reverse Pitch Milwaukee. Socialeads was the only entrant to recieve funding.. we are continuing to develop this project, watch out now!
+* Workflows
+* Proto-personas
+* Brand Development
+* One Page Sell Sheets
+* Prototyping
+* Workflows
+* Collaborative Design
+* Front-end Development
+
+*Salzer Software*
+UX/UI Front-end Development
+I worked with Salzer Software
+
 *Cousins Subs*
 UX & Front-end Development
 The goal of this project was to create a new online presence allowing Cousins Subs to better highlight their brand and allow their users to easily place online orders across multiple platforms and form factors.
-* Workflows*
-* Collaborative Design Sessions*
+* Workflows
+* Collaborative Design Sessions
 * Wireframes
 * Mockups
 * Icon & Asset Creation
