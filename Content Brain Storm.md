@@ -1,6 +1,6 @@
-## Collaboratively crafting awesome digital products. 
+# Collaboratively crafting awesome digital products. 
 
-### Process and Tool Kit
+## Process and Tool Kit
 * Market Analysis
 * User Research
 * Proto-persona Development 
@@ -12,7 +12,7 @@
 * Development
 * Usability Studies
 
-### Things I enjoy
+## Things I enjoy
 * Solving Problems
 * Learning
 * Faith
@@ -22,7 +22,7 @@
 * Cooking
 * Brewing and Vinting
 
-### Projects
+## Projects
 **Socialeads**
 
 UX/UI, Brand Development, Prototyping Front-end Development
@@ -36,9 +36,21 @@ THe goal was to create a compelling idea and interface for Socialeads in the 201
 * Collaborative Design
 * Front-end Development
 
-*Salzer Software*
+**ADHD America**
+
+**Salzer Software**
 UX/UI Front-end Development
-I worked with Salzer Software
+I teamed up with Salzer Software as a UX consultant and helped to provide a number of experiences for a local financial institution. The experiences where designed as primarily mobile Web apps. Freshened up look etc...
+* Workflows
+* UI Design
+* UX Design
+* Collaborative Design
+Front-end Development
+
+**Centare**
+
+UX/UI, Brand Development, Front-end Development
+
 
 *Cousins Subs*
 UX & Front-end Development
