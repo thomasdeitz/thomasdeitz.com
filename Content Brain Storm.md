@@ -39,7 +39,9 @@ THe goal was to create a compelling idea and interface for Socialeads in the 201
 **ADHD America**
 
 **Salzer Software**
+
 UX/UI Front-end Development
+
 I teamed up with Salzer Software as a UX consultant and helped to provide a number of experiences for a local financial institution. The experiences where designed as primarily mobile Web apps. Freshened up look etc...
 * Workflows
 * UI Design
@@ -52,8 +54,10 @@ Front-end Development
 UX/UI, Brand Development, Front-end Development
 
 
-*Cousins Subs*
+**Cousins Subs**
+
 UX & Front-end Development
+
 The goal of this project was to create a new online presence allowing Cousins Subs to better highlight their brand and allow their users to easily place online orders across multiple platforms and form factors.
 * Workflows
 * Collaborative Design Sessions
@@ -62,7 +66,8 @@ The goal of this project was to create a new online presence allowing Cousins Su
 * Icon & Asset Creation
 * Front-end Development
 
-*WHIO*
+**WHIO**
+
 Research, Development & Usability
 
 Create a new data entry portal that allows for easier access to important data, ability to swop task responsibilities & clear identification of task needing attention from the user.
@@ -75,7 +80,8 @@ Create a new data entry portal that allows for easier access to important data, 
 * Icon & Asset Creation
 * Front-end Development
 
-*A.L. Schutzman*
+**A.L. Schutzman**
+
 Project Discovery
 Assess current system, identify areas for improvement & recomend best course of action moving forward.
 * Proto-personas
