@@ -23,7 +23,8 @@
 * Brewing and Vinting
 
 ### Projects
-*Socialeads*
+**Socialeads**
+
 UX/UI, Brand Development, Prototyping Front-end Development
 THe goal was to create a compelling idea and interface for Socialeads in the 2017/2018 Reverse Pitch Milwaukee. Socialeads was the only entrant to recieve funding.. we are continuing to develop this project, watch out now!
 * Workflows
