@@ -123,13 +123,12 @@ h1 {
 	}
 	span {
 		animation-name: type;
-		animation-duration: 0s;
+		animation-duration: .001s;
 		animation-fill-mode: both;
-		overflow: hidden;
-		position: relative;
+		overflow:hidden;
 		@for $i from 1 through 100 {
 			&:nth-child(#{$i}) {
-				$delay: .2s * $i;
+				$delay: .15s * $i;
 				animation-delay: $delay;
 			}
 		}
@@ -138,13 +137,13 @@ h1 {
 
 @keyframes type {
   from {
-		position:absolute;
-    opacity: 0;
+		visibility:hidden;
+		font-size:0px;
   }
 
   to {
-		position:relative;
-    opacity: 1;
+		font-size:36px;
+		visibility:visible;
   }
 }
 
