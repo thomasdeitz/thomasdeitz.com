@@ -107,3 +107,7 @@ Assess current system, identify areas for improvement & recomend best course of 
 * User Research
 * Workflows, User Journeys
 * Current & Competitor Hueristics
+
+Centare 2012 - Present • User Experience Consultant
+Freelance 2010 - Present • All the Things
+Elmbrook Church 2006 - 2012  • Digital Media Artist
