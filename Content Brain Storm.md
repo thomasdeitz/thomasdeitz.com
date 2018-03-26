@@ -38,6 +38,15 @@ THe goal was to create a compelling idea and interface for Socialeads in the 201
 
 **ADHD America**
 
+Visual Identuty UI/UX Front-end Development
+
+I worked with ADHD America to created a crisp clean modern brand that communicates the message that we everyone can help one and that we can all be a super hero to some one with or without adhd. The website was designed to tell the story and inspire others to get involved with ADHD and support the organization by sponsoring the Cycling Team "Team ADHD America".
+* Brand Development
+* Visual Identity
+* Prototyping
+* UI Design
+* Front-end Development
+
 **Salzer Software**
 
 UX/UI Front-end Development
@@ -47,12 +56,19 @@ I teamed up with Salzer Software as a UX consultant and helped to provide a numb
 * UI Design
 * UX Design
 * Collaborative Design
-Front-end Development
+* Front-end Development
 
 **Centare**
 
 UX/UI, Brand Development, Front-end Development
 
+This was a replatform and reimagining of the coporate brand and translating that to the web. We accomplished this practiveing Agile software development techniques using harpjs to create a fast stable and secure brand presence on the web.
+
+* UI design
+* Dev Ops
+* Information Architecture
+* Collaborative Design
+* Front-end development
 
 **Cousins Subs**
 
