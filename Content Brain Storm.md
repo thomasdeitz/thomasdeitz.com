@@ -1,4 +1,7 @@
 # Collaboratively crafting awesome digital products. 
+# A passionate front-end developer focused on efficient beautiful code.
+# A Designer dedicated to solving design problems with elegant solutions.
+# Lean, Agile, User Centered, Collaborative, Iterative, Integrated.
 
 ## Process and Tool Kit
 * Market Analysis
