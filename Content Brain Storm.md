@@ -28,7 +28,7 @@
 * Creating
 
 ## Projects
-**Socialeads**
+**Socialeads** *make more generic*
 
 UX/UI, Brand Development, Prototyping Front-end Development
 THe goal was to create a compelling idea and interface for Socialeads in the 2017/2018 Reverse Pitch Milwaukee. Socialeads was the only entrant to recieve funding.. we are continuing to develop this project, watch out now!
@@ -56,7 +56,7 @@ I worked with ADHD America to created a crisp clean modern brand that communicat
 
 UX/UI Front-end Development
 
-I teamed up with Salzer Software as a UX consultant and helped to provide a number of experiences for a local financial institution. The experiences where designed as primarily mobile Web apps. Freshened up look etc...
+I teamed up with Salzer Software as a UX consultant and helped to provide a number of experiences for a number of local institution. The experiences where designed as primarily mobile Web apps. Freshened up look etc...
 * Workflows
 * UI Design
 * UX Design
@@ -113,3 +113,9 @@ Assess current system, identify areas for improvement & recomend best course of 
 Centare 2012 - Present • User Experience Consultant
 Freelance 2010 - Present • All the Things
 Elmbrook Church 2006 - 2012  • Digital Media Artist
+
+### Lean UX Process
+My process is in general fexible being that I work with a number of different type of clients that span multiple markets and sizes. In general I use a lean approach facilitating short pointed excercises designed to balance insight and efficiency. Low fidelity assets, photos of whiteboards and code serve as my documentation for the most part though I am glad to do high resolution renderings, jopournaey maps and other UX related assets if that is the right direction for the client. I am a fan of getting something 90% of the way thre and getting it in front of users than I am of noodling something for months to get it "100%" of the way there to learn that I missed the boat and we need to back track quite a bit. Fail fast and pivot.
+
+In the first 1-2 weeks of the project we will spend time getting the project and environments setup as well as participate in a number of UX activities that will really inform the direction the site will take as we move forward into development. This may include proto-persona creation, workflows, journey maps and design sessions. After this we can begin reimagining the experience a user has as they move through your site visually and with regard to the content they encounter. As we approach some of the more strategic changes to the Calculator and the Acquisition Process we may engage in some similar activities on a smaller scale to ensure we are on the same page and moving forward in a smart direction.
+
