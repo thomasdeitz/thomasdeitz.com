@@ -15,7 +15,7 @@
 * Development
 * Usability Studies
 
-## Things I enjoy
+## Things I find interesting.
 * Solving Problems
 * Learning
 * Faith
@@ -24,6 +24,8 @@
 * Game Development
 * Cooking
 * Brewing and Vinting
+* Technology
+* Creating
 
 ## Projects
 **Socialeads**
