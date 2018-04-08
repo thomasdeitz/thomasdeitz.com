@@ -124,3 +124,8 @@ In the first 1-2 weeks of the project we will spend time getting the project and
 I take a lean user focused approach to software development with just enough of each ingredient that a project needs to achieve the end goal in an effort to maximize efficiency and minimize waste. Users and outcomes are prioritized over documentation and mockups. that is nit to say I DONT VALUE ABEAUTIFUL AND FULLFILLING EXPERIENCE I just think the best way to get there is to build something for some one and see how they use it and keep what works for them and iterate on the parts that dont.
 
 I take a user focused approach to developing software allowing for maximum efficiency and minimum waste while still accomplishing business and user goals. Beautiful and fullfilling experiences are achieved by prioritizing users and outcomes over documentation and mockups. Getting software into the hands of users early and letting them shape the direction it goes allows for spending time on the right features and deliverying them to users at the proper time.
+
+
+### Quotes
+
+We engaged Tom to design and build the flagship website for our non-profit organization, ADHD America. To begin with, he was an incredible resource to guide us through the entire process of design, development, and launching the site. His ability to breakdown our vision into the ideal messaging platform for our organization's mission, was an incredible process to experience. Coupled with his graphic design and branding, we couldn't be more pleased with the final results. Everyone at ADHD America would recommend Tom as a key asset to your extended team. 
