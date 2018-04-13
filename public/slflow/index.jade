@@ -1,0 +1,46 @@
+#productPanel
+  img(src="./assets/product-panel-bg.svg" height="100%" width="100%")
+  img(src="./assets/product-panel.svg" height="100%" width="auto")
+  .backToMainLink
+  #firstProduct
+  #secondProduct
+
+
+#socialPanel
+  img(src="./assets/social-panel.svg" height="100%" width="100%")
+  .backToMainLink
+  h2 social
+
+#insightsPanel
+  img(src="./assets/insights-panel.svg" height="100%" width="100%")
+  .backToMainLink
+  h2 insights
+  
+#mainPanel
+  img(src="./assets/main-panel.svg" height="100%" width="100%")
+  #profilePicture
+  #productsLink
+  #insightsLink
+  #socialLink
+
+script.
+  $(document).ready(function() {
+    $('#productsLink').on('click', function() {
+      $('#panelContainer').addClass('productView');
+    });
+    $('#insightsLink').on('click', function() {
+      $('#panelContainer').addClass('insightsView');
+    });
+    $('#socialLink').on('click', function() {
+      $('#panelContainer').addClass('socialView');
+    });
+    $('.backToMainLink').on('click', function() {
+      $('#panelContainer').removeAttr('class');
+    });
+    $('#firstProduct').on('click', function() {
+      $('#productPanel').removeClass('second');
+    });
+    $('#secondProduct').on('click', function() {
+      $('#productPanel').addClass('second');
+    });
+  });

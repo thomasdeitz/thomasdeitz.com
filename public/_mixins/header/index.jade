@@ -1,16 +1,15 @@
 //- _components/header/index.jade
 
-- const images = partial("../../_helpers/getImages")
+include /_helpers/_helpers
+
 - let headline = "Collaboratively crafting awesome digital products.";
 - headline = headline.split('');
 
-header.marquee
+
+header.marquee(style="background-image: url(/assets/images/#{getImages()}")
   .container
     h2(style="letter-spacing: -4px;margin:0px;line-height:4px;") tD
     h6(style="font-weight:700;font-size: 5px;line-height:20px;") THOMAS DEITZ
     h1 
       for letter in headline
         span= letter
-  img(
-    src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/39357116667557.562afa641c076.jpg"
-    name="#{title}")

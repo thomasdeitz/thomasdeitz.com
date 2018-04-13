@@ -47,7 +47,9 @@ header.marquee {
 	background-color:white;
 	position:relative;
 	overflow:hidden;
-	//text-align:left;
+	background-size: cover;
+	background-color:white;
+	background-position:center center;
 	color: $black;	
 	height:100vh;
 	padding:0px;
@@ -89,13 +91,13 @@ header.marquee {
 		padding:30px;
 	}
 	img {
+		filter: grayscale(100%);
 		position:absolute;
-		display:none;
-		top:0px;
-		height: 100%;
-		width:auto;
-		right: 0px;
-		background-repeat: none;
+		top:50%;
+		height: auto;
+		width:100%;
+		left: 0px;
+		transform: translateY(-50%);
 	}
 
 	a {
