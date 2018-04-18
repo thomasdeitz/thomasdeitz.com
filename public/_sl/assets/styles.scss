@@ -19,6 +19,26 @@ html {
   }
   &.dashboard body {
     left:300px;
+
+    aside {
+      position:absolute;
+      padding:20px;
+      left:-300px;
+      width:300px;
+
+      section {
+        text-align:center;
+        figure {
+          margin:auto;
+          height:80px;
+          width:80px;
+          border-radius:50%;
+          background-color:lightgrey;
+          border: 5px solid white;
+          box-shadow: 0px 0px 20px darkgrey;
+        }
+      }
+    }
   }
 
   &.index,
@@ -37,7 +57,9 @@ html {
         padding:40px;
         background-color:white;
         box-shadow: 0px 0px 20px lightgrey;
-
+        button {
+          background-color:lightgrey;
+        }
         > * {
           padding:10px;
           margin:10px 0px;
