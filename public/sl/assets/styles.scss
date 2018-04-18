@@ -3,6 +3,7 @@
 }
 
 html {
+  font-family: Nunito;
   margin:0px;
   padding:0px;
   background-color: darkgray;
@@ -15,13 +16,16 @@ html {
     left:0px;
     right:0px;
     height:100%;
-    
-    .dashboard & {
-      left:300px;
-    }
+  }
+  &.dashboard body {
+    left:300px;
   }
 
-  &.index {
+  &.index,
+  &.twitter,
+  &.facebook,
+  &.linkedin,
+  &.instagram {
     body {
       display:flex;
       flex-direction: column;
@@ -29,11 +33,12 @@ html {
       justify-content: center;
 
       form {
+        text-align:center;
         padding:40px;
         background-color:white;
         box-shadow: 0px 0px 20px lightgrey;
 
-        * {
+        > * {
           padding:10px;
           margin:10px 0px;
           width:300px;
