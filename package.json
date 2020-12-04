@@ -2,7 +2,8 @@
   "name": "thomasdeitz.com",
   "version": "1.0.0",
   "engines": {
-    "npm": "6.x"
+    "npm": "6.x",
+    "node": "12.x"
   },
   "description": "",
   "main": "index.html",
