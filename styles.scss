@@ -1,97 +1,230 @@
+@import "variables";
+@import "mixins";
+
 :root {
-    font-family: 'Open Sans', sans-serif;
-    font-size: .68vw;
-    line-height: 1.5;
+    background-color: $c-nue4;
+    color: $c-nue1;
+    box-sizing: border-box;
+    font-family: $sans-f;
+    font-size: $base-fs;
+    line-height: $base-lh;
 
-    @media only screen and (max-width: 600px) {
-        font-size: 5vw;
-    }
-}
-
-blockquote {
-    font-family: 'Noto Serif', serif;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 3rem;
-    position: relative;
-    margin: 2rem 0;
-    background-color: rgba(lightslategray, .2);
-
-    &:before {
-        content: '“';
-        position: absolute;
-        top: 0rem;
-        left:.5rem;
-        font-size: 6rem;
-        color: lightslategray
-    }
-    &:after {
-        content: '”';
-        position: absolute;
-        bottom: -2rem;
-        right: .5rem;
-        font-size: 6rem;
-        color: lightslategray
+    &,
+    * {
+        position: relative;
     }
 
+    @include lg-screen {
+        font-size: $base-bp-lg-fs;
+    }
+
+    @include md-screen {
+        font-size: $base-bp-md-fs;
+    }
+
+
+    @include sm-screen {
+        font-size: $base-bp-sm-fs;
+    }
 }
 
 body {
-
-    
-
-    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
     display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 100vh;
+
+    @include lg-screen {
+        grid-template-columns: 50vw 50vw;
+    }
+
+    @include md-screen {
+        grid-template-columns: 100vw;
+        grid-template-rows: 50vh auto;
+    }
+
+    @include sm-screen {
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh auto;
+    }
+}
+
+figure {
+    overflow: hidden;
     margin: 0px;
     padding: 0px;
-    background-color: white;
-    color: black;
 
-    figure {
-        position: relative;
-        display: grid;
-        grid-template-columns: 12.5vw 12.5vw 12.5vw 12.5vw;
-        grid-template-areas: 
-    "h h h h";
-        overflow: hidden;
-        margin: 0px;
-        padding: 0px;
+    img {
+        background-image: url(./assets/hero.jpg);
+        background-size: cover;
+        background-color: $c-accent-l;
+        background-blend-mode: soft-light;
+        background-position: center left;
+        height: 100%;
+        width: 100%;
 
-        img {
-            background-image: url(./assets/hero.jpg);
-            background-size: cover; 
-            background-color: rgba(lightslategray, .2);
-            background-position: -.5vw center;
-            background-blend-mode: soft-light;
-
-            &:first-child {
-                grid-area: h;
-            }
+        @include lg-screen {
+            background-position-x: -12rem;
+            background-position-y: center;
         }
+    }
+
+    figcaption {
+        position: absolute !important;
+        z-index: 1000;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: $small-fs;
+        text-transform: uppercase;
+    }
+}
+
+section#resume {
+    overflow: scroll;
+
+    @include lg-screen {
+        @include faded-top-bottom;
+    }
+
+    @include xl-screen {
+        @include faded-top-bottom;
+    }
+}
+
+div.well {
+    @include content-well;
+}
+
+div.quote {
+    @include content-well;
+    text-align: center;
+
+    &:before,
+    &:after {
+        font-family: $serif-f;
+        position: absolute;
+        font-size: 6rem;
+        color: $c-accent;
+    }
+
+    &:before {
+        content: '“';
+        top: 0rem;
+        left: .5rem;
+
+    }
+
+    &:after {
+        content: '”';
+        bottom: 0;
+        right: .5rem;
+    }
+
+    blockquote {
+        margin: 0 0 1rem 0;
+        font-family: $serif-f;
+        font-size: $h3-fs;
+        font-weight: bold;
+    }
+}
+
+ul {
+    list-style-position: outside;
+    padding: 0px;
+    margin: 0 0 0 1rem;
+    column-count: 2;
+    font-size: $small-fs;
+}
+
+main {
+    margin: auto;
+    padding: 12rem;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "h h"
+        "a s";
+
+    @include lg-screen {
+        padding: 8rem;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "h"
+            "a"
+            "s";
+    }
+
+    @include sm-screen {
+        padding: 2rem;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "h"
+            "a"
+            "s";
+    }
+
+    @include md-screen {
+        padding: 4rem;
+    }
+
+    header {
+        grid-area: h;
+    }
+
+    article {
+        grid-area: a;
+        text-align: justify;
     }
 
     aside {
         grid-area: s;
-        font-family: 'Open Sans', sans-serif;
-        background-color: white;
-        color: black;
+        border-left: $c-accent 1px solid;
+        margin-left: 4rem;
         padding-left: 4rem;
-        align-self: flex-start;
-        section {
-        border-left: lightslategray 1px solid;
-        padding-left: 4rem;
-        }
+
         article {
-            
-            margin-bottom: 1vw;
+
+            margin-bottom: 1.2rem;
         }
 
-        * {display: block;}
+
+        @include lg-screen {
+            padding: 0rem;
+            margin: 0px;
+            margin-top: 4rem;
+            border: none;
+
+            article {
+                margin-bottom: 1rem;
+            }
+
+        }
+
+        @include sm-screen {
+            padding: 0rem;
+
+            section {
+                border: none;
+                margin-top: 4rem;
+                padding-left: 0;
+
+                article {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        * {
+            display: block;
+        }
+
         em {
-            color: lightslategray;
+            color: $c-accent;
             text-transform: uppercase;
             font-style: normal;
             letter-spacing: .1em;
@@ -100,82 +233,64 @@ body {
         strong {
             font-weight: bold;
         }
-        
+
     }
+}
 
-    main {
-        //font-family: 'Noto Serif', serif;
-        padding: 12rem;
-        overflow: scroll;
-        display: grid;
-        align-items: center;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+small {
+    font-size: $small-fs;
+}
 
-        grid-template-areas: "h h" "a s";
-        header {
-            grid-area: h;
-        }
-        article {
-            grid-area: a;
-            text-align: justify;
+h1 {
+    font-family: $serif-f;
+    font-size: $h1-fs;
+    margin: 0;
+    padding: 0;
+}
 
-            section {
-                padding: 3rem;
-                position: relative;
-                margin: 2rem 0;
-                background-color: rgba(lightslategray, .2);
-                ul {
-                    list-style-position: inside;
-                    padding: 0px;
-                    margin: 0px;
-                    column-count:2;
-                    font-size: .8rem;
-                }
-            }
-        }
+h2 {
+    font-family: $serif-f;
+    font-size: $h2-fs;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: $serif-f;
+    font-size: $h3-fs;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: 1rem;
+    color: $c-accent;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: $p-ffs;
+    padding: 0;
+}
+
+a,
+a:visited,
+a:active {
+    color: $c-nue1;
+}
+
+a:hover {
+    color: $c-accent;
+}
+
+@media only print {
+    :root {
+        font-size: 8pt;
     }
-
-    header {}
-
-    
-
-    aside {}
-
-    footer {}
-
-    small {
-        font-size: .8rem;
+    a {
+        text-decoration: none;
     }
-
-    h1 {
-        font-family: 'Noto Serif', serif;
-        font-size: 4rem;
+    body {
+        grid-template-columns: 100vw;
+        grid-template-rows: 100vh;
     }
-
-    h2 {
-        font-family: 'Noto Serif', serif;
-        font-size: 2rem;
-        margin: 0;
-        padding: 0;
-    }
-
-    h4 {
-        font-size: 1rem;
-        color: lightslategray;
-        text-transform: uppercase;
-        margin: 0;
-        margin-bottom: 1rem;
-        padding: 0;
-    }
-
-    a,
-    a:visited,
-    a:active {
-        color: white;
-    }
-
-    a:hover {
-        color: grey;
-    }
+    figure {display:none;} 
 }

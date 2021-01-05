@@ -1,0 +1,53 @@
+@import "variables";
+
+@mixin sm-screen {
+    @media only screen and (max-width: $bp-sm - 1) {
+        @content;
+    }
+}
+
+@mixin md-screen {
+    @media only screen and (min-width: $bp-sm) and (max-width: $bp-md - 1) {
+        @content;
+    }
+}
+
+@mixin lg-screen {
+    @media only screen and (min-width: $bp-md) and (max-width: $bp-lg - 1) {
+        @content;
+    }
+}
+
+@mixin xl-screen {
+    @media only screen and (min-width: $bp-lg) {
+        @content;
+    }
+}
+
+@mixin content-well {
+    padding: 3rem;
+    position: relative;
+    margin: 2rem 0;
+    background-color: $c-accent-l;
+}
+
+@mixin faded-top-bottom {
+    &:before {
+        z-index: 1000;
+        content: '';
+        position: fixed;
+        top: 0px;
+        height: 8rem;
+        width: 100%;
+        background-image: linear-gradient(180deg, $c-nue4 50%, rgba($c-nue4, 0));
+    }
+
+    &:after {
+        content: '';
+        position: fixed;
+        bottom: 0px;
+        height: 8rem;
+        width: 100%;
+        background-image: linear-gradient(0deg, $c-nue4 50%, rgba($c-nue4, 0));
+    }
+}

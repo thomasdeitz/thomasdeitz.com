@@ -1,162 +1,310 @@
 @charset "UTF-8";
 :root {
-  font-family: 'Open Sans', sans-serif;
-  font-size: .68vw;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.68vw;
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 600px) {
+:root,
+:root * {
+  position: relative;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
   :root {
-    font-size: 5vw;
+    font-size: 1vw;
   }
 }
 
-blockquote {
-  font-family: 'Noto Serif', serif;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-align: center;
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  :root {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  :root {
+    font-size: 4vw;
+  }
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 100vh;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  body {
+    grid-template-columns: 50vw 50vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  body {
+    grid-template-columns: 100vw;
+    grid-template-rows: 50vh auto;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  body {
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh auto;
+  }
+}
+
+figure {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+figure img {
+  background-image: url(./assets/hero.jpg);
+  background-size: cover;
+  background-color: rgba(119, 136, 153, 0.2);
+  background-blend-mode: soft-light;
+  background-position: center left;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  figure img {
+    background-position-x: -12rem;
+    background-position-y: center;
+  }
+}
+
+figure figcaption {
+  position: absolute !important;
+  z-index: 1000;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+section#resume {
+  overflow: scroll;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  section#resume:before {
+    z-index: 1000;
+    content: '';
+    position: fixed;
+    top: 0px;
+    height: 8rem;
+    width: 100%;
+    background-image: linear-gradient(180deg, white 50%, rgba(255, 255, 255, 0));
+  }
+  section#resume:after {
+    content: '';
+    position: fixed;
+    bottom: 0px;
+    height: 8rem;
+    width: 100%;
+    background-image: linear-gradient(0deg, white 50%, rgba(255, 255, 255, 0));
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  section#resume:before {
+    z-index: 1000;
+    content: '';
+    position: fixed;
+    top: 0px;
+    height: 8rem;
+    width: 100%;
+    background-image: linear-gradient(180deg, white 50%, rgba(255, 255, 255, 0));
+  }
+  section#resume:after {
+    content: '';
+    position: fixed;
+    bottom: 0px;
+    height: 8rem;
+    width: 100%;
+    background-image: linear-gradient(0deg, white 50%, rgba(255, 255, 255, 0));
+  }
+}
+
+div.well {
   padding: 3rem;
   position: relative;
   margin: 2rem 0;
   background-color: rgba(119, 136, 153, 0.2);
 }
 
-blockquote:before {
-  content: '“';
+div.quote {
+  padding: 3rem;
+  position: relative;
+  margin: 2rem 0;
+  background-color: rgba(119, 136, 153, 0.2);
+  text-align: center;
+}
+
+div.quote:before, div.quote:after {
+  font-family: "Noto Serif", serif;
   position: absolute;
+  font-size: 6rem;
+  color: lightslategray;
+}
+
+div.quote:before {
+  content: '“';
   top: 0rem;
   left: .5rem;
-  font-size: 6rem;
-  color: lightslategray;
 }
 
-blockquote:after {
+div.quote:after {
   content: '”';
-  position: absolute;
-  bottom: -2rem;
+  bottom: 0;
   right: .5rem;
-  font-size: 6rem;
-  color: lightslategray;
 }
 
-body {
-  font-size: 1rem;
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: 100vh;
-  margin: 0px;
+div.quote blockquote {
+  margin: 0 0 1rem 0;
+  font-family: "Noto Serif", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style-position: outside;
   padding: 0px;
-  background-color: white;
-  color: black;
+  margin: 0 0 0 1rem;
+  column-count: 2;
+  font-size: 0.8rem;
 }
 
-body figure {
-  position: relative;
+main {
+  margin: auto;
+  padding: 12rem;
   display: grid;
-  grid-template-columns: 12.5vw 12.5vw 12.5vw 12.5vw;
-  grid-template-areas: "h h h h";
-  overflow: hidden;
-  margin: 0px;
-  padding: 0px;
+  align-items: flex-start;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "h h" "a s";
 }
 
-body figure img {
-  background-image: url(./assets/hero.jpg);
-  background-size: cover;
-  background-color: rgba(119, 136, 153, 0.2);
-  background-position: -.5vw center;
-  background-blend-mode: soft-light;
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  main {
+    padding: 8rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "h" "a" "s";
+  }
 }
 
-body figure img:first-child {
+@media only screen and (max-width: 599px) {
+  main {
+    padding: 2rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "h" "a" "s";
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  main {
+    padding: 4rem;
+  }
+}
+
+main header {
   grid-area: h;
 }
 
-body aside {
+main article {
+  grid-area: a;
+  text-align: justify;
+}
+
+main aside {
   grid-area: s;
-  font-family: 'Open Sans', sans-serif;
-  background-color: white;
-  color: black;
-  padding-left: 4rem;
-  align-self: flex-start;
-}
-
-body aside section {
   border-left: lightslategray 1px solid;
+  margin-left: 4rem;
   padding-left: 4rem;
 }
 
-body aside article {
-  margin-bottom: 1vw;
+main aside article {
+  margin-bottom: 1.2rem;
 }
 
-body aside * {
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  main aside {
+    padding: 0rem;
+    margin: 0px;
+    margin-top: 4rem;
+    border: none;
+  }
+  main aside article {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  main aside {
+    padding: 0rem;
+  }
+  main aside section {
+    border: none;
+    margin-top: 4rem;
+    padding-left: 0;
+  }
+  main aside section article {
+    margin-bottom: 1rem;
+  }
+}
+
+main aside * {
   display: block;
 }
 
-body aside em {
+main aside em {
   color: lightslategray;
   text-transform: uppercase;
   font-style: normal;
   letter-spacing: .1em;
 }
 
-body aside strong {
+main aside strong {
   font-weight: bold;
 }
 
-body main {
-  padding: 12rem;
-  overflow: scroll;
-  display: grid;
-  align-items: center;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "h h" "a s";
+small {
+  font-size: 0.8rem;
 }
 
-body main header {
-  grid-area: h;
-}
-
-body main article {
-  grid-area: a;
-  text-align: justify;
-}
-
-body main article section {
-  padding: 3rem;
-  position: relative;
-  margin: 2rem 0;
-  background-color: rgba(119, 136, 153, 0.2);
-}
-
-body main article section ul {
-  list-style-position: inside;
-  padding: 0px;
-  margin: 0px;
-  column-count: 2;
-  font-size: .8rem;
-}
-
-body small {
-  font-size: .8rem;
-}
-
-body h1 {
-  font-family: 'Noto Serif', serif;
+h1 {
+  font-family: "Noto Serif", serif;
   font-size: 4rem;
+  margin: 0;
+  padding: 0;
 }
 
-body h2 {
-  font-family: 'Noto Serif', serif;
+h2 {
+  font-family: "Noto Serif", serif;
   font-size: 2rem;
   margin: 0;
   padding: 0;
 }
 
-body h4 {
+h3 {
+  font-family: "Noto Serif", serif;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
   font-size: 1rem;
   color: lightslategray;
   text-transform: uppercase;
@@ -165,12 +313,28 @@ body h4 {
   padding: 0;
 }
 
-body a,
-body a:visited,
-body a:active {
-  color: white;
+a,
+a:visited,
+a:active {
+  color: black;
 }
 
-body a:hover {
-  color: grey;
+a:hover {
+  color: lightslategray;
+}
+
+@media only print {
+  :root {
+    font-size: 8pt;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+  }
+  figure {
+    display: none;
+  }
 }
