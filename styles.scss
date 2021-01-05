@@ -188,7 +188,6 @@ main {
         padding-left: 4rem;
 
         article {
-
             margin-bottom: 1.2rem;
         }
 
@@ -207,15 +206,12 @@ main {
 
         @include sm-screen {
             padding: 0rem;
+            margin: 0px;
+            margin-top: 4rem;
+            border: none;
 
-            section {
-                border: none;
-                margin-top: 4rem;
-                padding-left: 0;
-
-                article {
-                    margin-bottom: 1rem;
-                }
+            article {
+                margin-bottom: 1rem;
             }
         }
 

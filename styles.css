@@ -253,13 +253,11 @@ main aside article {
 @media only screen and (max-width: 599px) {
   main aside {
     padding: 0rem;
-  }
-  main aside section {
-    border: none;
+    margin: 0px;
     margin-top: 4rem;
-    padding-left: 0;
+    border: none;
   }
-  main aside section article {
+  main aside article {
     margin-bottom: 1rem;
   }
 }
