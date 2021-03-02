@@ -142,7 +142,7 @@ main {
     padding: 12rem;
     display: grid;
     align-items: flex-start;
-    grid-template-columns: auto auto;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: auto auto;
     grid-template-areas:
         "h h"
@@ -184,8 +184,8 @@ main {
     aside {
         grid-area: s;
         border-left: $c-accent 1px solid;
-        margin-left: 4rem;
-        padding-left: 4rem;
+        margin-left: 3rem;
+        padding-left: 3rem;
 
         article {
             margin-bottom: 1.2rem;
@@ -195,7 +195,7 @@ main {
         @include lg-screen {
             padding: 0rem;
             margin: 0px;
-            margin-top: 4rem;
+            margin-top: 2rem;
             border: none;
 
             article {
@@ -207,7 +207,7 @@ main {
         @include sm-screen {
             padding: 0rem;
             margin: 0px;
-            margin-top: 4rem;
+            margin-top: 2rem;
             border: none;
 
             article {
@@ -219,10 +219,19 @@ main {
             display: block;
         }
 
+        p {
+            margin-top: .25rem;
+        }
+
         em {
             color: $c-accent;
-            text-transform: uppercase;
             font-style: normal;
+            text-align: left;
+            
+        }
+
+        .date em {
+            text-transform: uppercase;
             letter-spacing: .1em;
         }
 

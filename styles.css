@@ -189,7 +189,7 @@ main {
   padding: 12rem;
   display: grid;
   align-items: flex-start;
-  grid-template-columns: auto auto;
+  grid-template-columns: 3fr 2fr;
   grid-template-rows: auto auto;
   grid-template-areas: "h h" "a s";
 }
@@ -230,8 +230,8 @@ main article {
 main aside {
   grid-area: s;
   border-left: lightslategray 1px solid;
-  margin-left: 4rem;
-  padding-left: 4rem;
+  margin-left: 3rem;
+  padding-left: 3rem;
 }
 
 main aside article {
@@ -242,7 +242,7 @@ main aside article {
   main aside {
     padding: 0rem;
     margin: 0px;
-    margin-top: 4rem;
+    margin-top: 2rem;
     border: none;
   }
   main aside article {
@@ -254,7 +254,7 @@ main aside article {
   main aside {
     padding: 0rem;
     margin: 0px;
-    margin-top: 4rem;
+    margin-top: 2rem;
     border: none;
   }
   main aside article {
@@ -266,10 +266,18 @@ main aside * {
   display: block;
 }
 
+main aside p {
+  margin-top: .25rem;
+}
+
 main aside em {
   color: lightslategray;
-  text-transform: uppercase;
   font-style: normal;
+  text-align: left;
+}
+
+main aside .date em {
+  text-transform: uppercase;
   letter-spacing: .1em;
 }
 
