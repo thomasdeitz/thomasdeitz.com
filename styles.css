@@ -7,24 +7,20 @@
   font-size: 0.68vw;
   line-height: 1.5;
 }
-
 :root,
 :root * {
   position: relative;
 }
-
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   :root {
     font-size: 1vw;
   }
 }
-
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
   :root {
     font-size: 2vw;
   }
 }
-
 @media only screen and (max-width: 599px) {
   :root {
     font-size: 4vw;
@@ -38,20 +34,17 @@ body {
   grid-template-columns: 50vw 50vw;
   grid-template-rows: 100vh;
 }
-
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   body {
     grid-template-columns: 50vw 50vw;
   }
 }
-
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
   body {
     grid-template-columns: 100vw;
     grid-template-rows: 50vh auto;
   }
 }
-
 @media only screen and (max-width: 599px) {
   body {
     grid-template-columns: 100vw;
@@ -64,7 +57,6 @@ figure {
   margin: 0px;
   padding: 0px;
 }
-
 figure img {
   background-image: url(./assets/hero.jpg);
   background-size: cover;
@@ -74,14 +66,12 @@ figure img {
   height: 100%;
   width: 100%;
 }
-
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   figure img {
     background-position-x: -12rem;
     background-position-y: center;
   }
 }
-
 figure figcaption {
   position: absolute !important;
   z-index: 1000;
@@ -94,11 +84,10 @@ figure figcaption {
 section#resume {
   overflow: scroll;
 }
-
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   section#resume:before {
     z-index: 1000;
-    content: '';
+    content: "";
     position: fixed;
     top: 0px;
     height: 8rem;
@@ -106,7 +95,7 @@ section#resume {
     background-image: linear-gradient(180deg, white 50%, rgba(255, 255, 255, 0));
   }
   section#resume:after {
-    content: '';
+    content: "";
     position: fixed;
     bottom: 0px;
     height: 8rem;
@@ -114,11 +103,10 @@ section#resume {
     background-image: linear-gradient(0deg, white 50%, rgba(255, 255, 255, 0));
   }
 }
-
 @media only screen and (min-width: 1440px) {
   section#resume:before {
     z-index: 1000;
-    content: '';
+    content: "";
     position: fixed;
     top: 0px;
     height: 8rem;
@@ -126,7 +114,7 @@ section#resume {
     background-image: linear-gradient(180deg, white 50%, rgba(255, 255, 255, 0));
   }
   section#resume:after {
-    content: '';
+    content: "";
     position: fixed;
     bottom: 0px;
     height: 8rem;
@@ -149,26 +137,22 @@ div.quote {
   background-color: rgba(119, 136, 153, 0.2);
   text-align: center;
 }
-
 div.quote:before, div.quote:after {
   font-family: "Noto Serif", serif;
   position: absolute;
   font-size: 6rem;
   color: lightslategray;
 }
-
 div.quote:before {
-  content: '“';
+  content: "“";
   top: 0rem;
-  left: .5rem;
+  left: 0.5rem;
 }
-
 div.quote:after {
-  content: '”';
+  content: "”";
   bottom: 0;
-  right: .5rem;
+  right: 0.5rem;
 }
-
 div.quote blockquote {
   margin: 0 0 1rem 0;
   font-family: "Noto Serif", serif;
@@ -180,7 +164,8 @@ ul {
   list-style-position: outside;
   padding: 0px;
   margin: 0 0 0 1rem;
-  column-count: 2;
+  -moz-column-count: 2;
+       column-count: 2;
   font-size: 0.8rem;
 }
 
@@ -193,7 +178,6 @@ main {
   grid-template-rows: auto auto;
   grid-template-areas: "h h" "a s";
 }
-
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   main {
     padding: 8rem;
@@ -202,7 +186,6 @@ main {
     grid-template-areas: "h" "a" "s";
   }
 }
-
 @media only screen and (max-width: 599px) {
   main {
     padding: 2rem;
@@ -211,33 +194,27 @@ main {
     grid-template-areas: "h" "a" "s";
   }
 }
-
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
   main {
     padding: 4rem;
   }
 }
-
 main header {
   grid-area: h;
 }
-
 main article {
   grid-area: a;
-  text-align: justify;
+  text-align: left;
 }
-
 main aside {
   grid-area: s;
   border-left: lightslategray 1px solid;
   margin-left: 3rem;
   padding-left: 3rem;
 }
-
 main aside article {
   margin-bottom: 1.2rem;
 }
-
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
   main aside {
     padding: 0rem;
@@ -249,7 +226,6 @@ main aside article {
     margin-bottom: 1rem;
   }
 }
-
 @media only screen and (max-width: 599px) {
   main aside {
     padding: 0rem;
@@ -261,26 +237,21 @@ main aside article {
     margin-bottom: 1rem;
   }
 }
-
 main aside * {
   display: block;
 }
-
 main aside p {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
 }
-
 main aside em {
   color: lightslategray;
   font-style: normal;
   text-align: left;
 }
-
 main aside .date em {
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
-
 main aside strong {
   font-weight: bold;
 }
@@ -343,4 +314,4 @@ a:hover {
   figure {
     display: none;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
