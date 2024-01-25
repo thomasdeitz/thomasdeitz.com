@@ -8,10 +8,11 @@
     font-family: $sans-f;
     font-size: $base-fs;
     line-height: $base-lh;
+    font-weight: 300;
 
     &,
     * {
-        position: relative;
+        position: relative; 
     }
 
     @include lg-screen {
@@ -29,46 +30,66 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    display: flex;
+    justify-content:center;
+    margin: 0;
+    padding: 35px;
+}
+
+header {
+    border-bottom: 1px solid $c-accent-l;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+}
+
+main {
+    background-color: $c-nue4;
+    //border: 1px solid $c-accent-l;
     display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh;
+    grid-template-columns: auto 600px;
+    grid-template-rows: auto;
+    padding: 35px;
 
     @include lg-screen {
-        grid-template-columns: 50vw 50vw;
+        grid-template-columns: auto 600px;
     }
 
     @include md-screen {
-        grid-template-columns: 100vw;
-        grid-template-rows: 50vh auto;
+        grid-template-columns: calc(100vw - 70px);
+        grid-template-rows: auto auto;
     }
 
     @include sm-screen {
-        grid-template-columns: 100vw;
-        grid-template-rows: 30vh auto;
+        grid-template-columns: calc(100vw - 70px);
+        grid-template-rows: auto auto;
+    }
+}
+
+img {
+    background-image: url(./assets/hero.jpg);
+    background-size: cover;
+    background-position: center left;
+    filter:grayscale(1);
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid $c-accent-l;
+    aspect-ratio: 1/1;
+    margin-bottom: 25px;
+
+    @include md-screen {
+        display:none;
+    }
+    @include sm-screen {
+        display:none;
     }
 }
 
 figure {
+    background-color: red;
     overflow: hidden;
     margin: 0px;
     padding: 0px;
-
-    img {
-        background-image: url(./assets/hero.jpg);
-        background-size: cover;
-        background-color: $c-accent-l;
-        background-blend-mode: soft-light;
-        background-position: center left;
-        height: 100%;
-        width: 100%;
-
-        @include lg-screen {
-            background-position-x: -12rem;
-            background-position-y: center;
-        }
-    }
+    text-align: center;
 
     figcaption {
         position: absolute !important;
@@ -80,7 +101,7 @@ figure {
     }
 }
 
-section#resume {
+#resume3 {
     overflow: scroll;
 
     @include lg-screen {
@@ -92,154 +113,85 @@ section#resume {
     }
 }
 
-div.well {
-    @include content-well;
-}
-
-div.quote {
-    @include content-well;
-    text-align: center;
-
-    &:before,
-    &:after {
-        font-family: $serif-f;
-        position: absolute;
-        font-size: 6rem;
-        color: $c-accent;
-    }
-
-    &:before {
-        content: '“';
-        top: 0rem;
-        left: .5rem;
-
-    }
-
-    &:after {
-        content: '”';
-        bottom: 0;
-        right: .5rem;
-    }
-
-    blockquote {
-        margin: 0 0 1rem 0;
-        font-family: $serif-f;
-        font-size: $h3-fs;
-        font-weight: bold;
-    }
-}
-
 ul {
     list-style-position: outside;
-    padding: 0px;
-    margin: 0 0 0 1rem;
-    column-count: 2;
-    font-size: $small-fs;
+    padding: 0 0 30px 0;
+    margin: 0 0 0 0;
+    font-size: $p-fs;
+    list-style: none;
+
+    li {
+        margin: 0 0 5px 0;
+        padding: 0;
+
+        .fa-solid, .fa-regular, .fa-brands {
+            position: absolute;
+            left: 0px;
+            top: .15rem;
+        }
+
+        .fa-regular {
+            top: 1.9rem;
+        }
+    }
+}
+
+#resume {
+    padding: 35px;
+    grid-area: a;
 }
 
 main {
-    margin: auto;
-    padding: 12rem;
-    display: grid;
-    align-items: flex-start;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "h h"
-        "a s";
+    align-items:stretch;
+    grid-template-areas: "s a";
+    
 
     @include lg-screen {
         padding: 8rem;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
         grid-template-areas: 
-            "h"
-            "a"
-            "s";
+            "s a";
     }
 
     @include sm-screen {
-        padding: 2rem;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
         grid-template-areas: 
-            "h"
             "a"
             "s";
     }
 
     @include md-screen {
-        padding: 4rem;
-    }
-
-    header {
-        grid-area: h;
-    }
-
-    article {
-        grid-area: a;
-        text-align: left;
+        grid-template-areas: 
+            "a"
+            "s";
     }
 
     aside {
         grid-area: s;
-        border-left: $c-accent 1px solid;
-        margin-left: 3rem;
-        padding-left: 3rem;
-
-        article {
+        border-right: 1px solid $c-accent-l;
+        padding: 35px;
+        
+        .experience {
             margin-bottom: 1.2rem;
         }
-
-
-        @include lg-screen {
-            padding: 0rem;
-            margin: 0px;
-            margin-top: 2rem;
-            border: none;
-
-            article {
-                margin-bottom: 1rem;
-            }
-
-        }
-
+    
         @include sm-screen {
-            padding: 0rem;
-            margin: 0px;
-            margin-top: 2rem;
             border: none;
-
-            article {
-                margin-bottom: 1rem;
-            }
+            border-top: 1px solid $c-accent-l;
+            padding: 35px 0;
+            margin: 0 35px; 
         }
-
-        * {
-            display: block;
+    
+        @include md-screen {
+            border: none;
+            border-top: 1px solid $c-accent-l;
+            padding: 35px 0;
+            margin: 0 35px; 
         }
-
-        p {
-            margin-top: .25rem;
-        }
-
-        em {
-            color: $c-accent;
-            font-style: normal;
-            text-align: left;
-            
-        }
-
-        .date em {
-            text-transform: uppercase;
-            letter-spacing: .1em;
-        }
-
-        strong {
-            font-weight: bold;
-        }
-
     }
+}
+
+strong {
+    font-family: $sans-f;
+    font-weight: bold;
 }
 
 small {
@@ -247,43 +199,54 @@ small {
 }
 
 h1 {
-    font-family: $serif-f;
+    font-family: $sans-f;
     font-size: $h1-fs;
+    text-transform: uppercase;
+    line-height: 1;
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    font-family: $serif-f;
+    font-family: $sans-f;
     font-size: $h2-fs;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1;
     margin: 0;
     padding: 0;
 }
 
 h3 {
-    font-family: $serif-f;
+    font-family: $sans-f;
     font-size: $h3-fs;
     margin: 0;
     padding: 0;
 }
 
 h4 {
-    font-size: 1rem;
-    color: $c-accent;
+    font-family: $sans-f;
+    font-size: $h3-fs;
+    //color: $c-accent;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: $p-ffs;
+    margin-bottom: $p-fs;
     padding: 0;
+}
+
+p {
+    margin: 0 0 35px 0;
 }
 
 a,
 a:visited,
 a:active {
     color: $c-nue1;
+    text-decoration-color: $c-accent-l;
 }
 
 a:hover {
-    color: $c-accent;
+    text-decoration-color: $c-nue1;
 }
 
 @media only print {

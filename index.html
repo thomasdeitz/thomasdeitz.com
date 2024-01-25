@@ -4,6 +4,11 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8230693-5"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -11,8 +16,140 @@
 
         gtag('config', 'UA-8230693-5');
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const ThomasDeitz = { 
+                el: "#app",
+                data() {
+                    return {
+                        today: new Date(),
+                        first: "Tom",
+                        last: "Deitz",
+                        subtitle: "User Experience Leader",
+                        about: [
+                            "I am a seasoned UX leader passionate about guiding agile teams to efficiently solve design problems that yield delightful experiences for the end user. Taking a user problem from felt need, to design, to front-end code, to a validated solution is my bread and butter.",
+                            "Throughout my career I have been a part of teams in small and large organizations and delight in new challenges. I have most recently been a Senior User Experience Contractor for a couple interesting organizations in Milwaukee and Orange County.",
+                            //"When I am not working you very well might find me wiping out on my road bike, messing around with music in my home studio, serving at church, spending time with my family, or just cuddling with my dog."
+                        ],
+                        contact: {
+                            address1: "1404 Bluebird Dr.",
+                            city: "Oconomowoc",
+                            state: "WI",
+                            zip: "53066",
+                            phone: "262-567-8114",
+                            email: "thomasjdeitz@gmail.com",
+                        },
+                        quote: {
+                            blockquote: "We engaged Tom to design and build the flagship website for our non-profit organization, ADHD America... we couldn't be more pleased with the final results.",
+                            cite: "Chip Pieper - President, ADHD America",
+                            visible: false
+                        },
+                        experiences: [
+                            // {
+                            //     description: "I work with small businesses to help them understand their audience and deliver beautiful, functional solutions.",
+                            //     employer: "Thomas Deitz - Freelance",
+                            //     end: "Present",
+                            //     start: "08.09",
+                            //     title: "Designer & Developer",
+                            // },
+                            {
+                                description: "Utilizing my proficiency in UI/UX design and full-stack development, I actively contributed to the design, development, and validation of numerous client-facing applications and internal business tools across various teams.",
+                                employer: "Novir",
+                                end: "11.23",
+                                start: "06.23",
+                                title: "Senior User Experience Contractor",
+                            },
+                            {
+                                description: "Contributed my expertise to a dynamic group spearheading the rapid development and validation of innovative concepts, particularly in the exciting realm of Generative AI.",
+                                employer: "Pacific Life",
+                                end: "11.23",
+                                start: "06.23",
+                                title: "Senior User Experience Contractor",
+                            },
+                            {
+                                description: "Launched a UI development team, nurturing talent and fostering a passion for UX, while advocating for user-centric practices across the company and with clients.",
+                                employer: "Layer One Media",
+                                end: "02.23",
+                                start: "10.21",
+                                title: "Senior UX Lead",
+                            },
+                            {
+                                description: "Designed and developed captivating UI solutions for clients, while championing user-centricity as a core organizational principle.",
+                                employer: "Centare",
+                                end: "10.21",
+                                start: "05.21",
+                                title: "Senior Design Consultant"
+                            },
+                            {
+                                description: "Established a robust UX practice by implementing lean UX methodologies, driving user-centeredness across the organization.",
+                                employer: "Calcium (Health Champion)",
+                                end: "05.21",
+                                start: "10.18",
+                                title: "Managing Director, User Experience"
+                            },
+                            {
+                                description: "Championed a user-centric revolution within the company, crafting a robust UX framework and empowering teams to embrace user-centered development.",
+                                employer: "Centare",
+                                end: "10.18",
+                                start: "08.12",
+                                title: "User Experience"
+                            },
+                        ],
+                        skills: [
+                            {
+                                text: "Market Analysis",
+                                icon: "fa-chart-line"
+                            },
+                            {
+                                text: "User Research",
+                                icon: "fa-magnifying-glass",
+                            },
+                            {
+                                text: "Proto-personas",
+                                icon: "fa-address-card"
+                            },
+                            {
+                                text: "Journey Mapping",
+                                icon: "fa-person-walking-arrow-right"
+                            },
+                            {
+                                text: "Workflow",
+                                icon: "fa-sitemap"
+                            },
+                            {
+                                text: "Design Studios",
+                                icon: "fa-wand-magic-sparkles"
+                            },
+                            {
+                                text: "Wireframes",
+                                icon: "fa-object-group"
+                            },
+                            {
+                                text: "Mockups",
+                                icon: "fa-laptop"
+                            },
+                            {
+                                text: "Design Systems",
+                                icon: "fa-cubes"
+                            },
+                            {
+                                text: "HTML, CSS, JS, React, Vue, Sass",
+                                icon: "fa-code"
+                            },
+                            {
+                                text: "Usability Studies",
+                                icon: "fa-people-group"
+                            }
+                        ]
+                    }
+                }
+            };
+            const app = Vue.createApp(ThomasDeitz);
+                app.mount("#app");
+        });
+    </script>
 
-    <title>Thomas Deitz | User Experience</title>
+    <title>Thomas Deitz | User Experience Leader</title>
 
     <meta charset="UTF-8">
     <meta name="author" content="Tom Deitz">
@@ -28,148 +165,75 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <figure id="hero">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Image of Tom" />
-        <figcaption>© 2020 Thomas Deitz</figcaption>
-    </figure>
-    <section id="resume">
-        <main>
-            <header>
-                <h2>Thomas Deitz</h2>
-                <h4>User Experience Leader</h4>
-            </header>
-            <article>
-                <p>
-                    I am a seasoned UX leader passionate about guiding agile teams to efficiently solve design problems
-                    that yield delightful experiences for the end user. Taking a user problem from felt need, to
-                    design, to front-end code, to a validated solution is my bread and butter.
-                </p>
-                <div class="well">
-                    <h4>Process Tool Kit</h4>
-                    <ul>
-                        <li>Market Analysis</li>
-                        <li>User Research</li>
-                        <li>Proto-personas</li>
-                        <li>Journey Mapping</li>
-                        <li>Workflow</li>
-                        <li>Design Studios</li>
-                        <li>Wireframes</li>
-                        <li>Mockups</li>
-                        <li>Design Systems</li>
-                        <li>HTML, CSS, JS</li>
-                        <li>Usability Studies</li>
-                    </ul>
-                </div>
+<body id="app">
+    <main>
+        <aside>
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Image of Tom" />
+            <section>
+                <h4>Contact</h4>
+                <ul class="fa-ul">
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-location-dot"></i></span>
+                        <span>
+                            <span>1404 Bluebird Dr</span><br/>
+                            <span>Oconomowoc, WI 53066</span>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-phone"></i></span>
+                        <a href="tel:2625678114" title="Call or text me">262-567-8114</a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-envelope-open-text"></i></span>
+                        <a href="mailto:thomasjdeitz@gmail.com" title="Send me an email">thomasjdeitz@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-solid fa-globe"></i></span>
+                        <a href="https://www.thomasdeitz.com" title="Visit Website">thomasdeitz.com</a>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fa-brands fa-linkedin"></i></span>
+                        <a href="https://www.linkedin.com/in/tom-deitz-05b10456/" title="Visit Linkedin">linkedin.com/in/tom-deitz-05b10456</a>
+                    </li>
+                </ul>
 
-                <p>
-                    Throughout my career I have been a part of teams in small and large organizations and delight in new
-                    challenges. I have most recently been a Senior User Experience Contractor for a couple interesting organizations in Milwaukee and Orange County.
-                </p>
-                <div class="quote">
-                    <blockquote>
-                        We engaged Tom to design and build the flagship website for our non-profit organization, ADHD
-                        America... we couldn't be more pleased with the final results.
-                    </blockquote>
-                    <cite>Chip Pieper - President, ADHD America</cite>
+                <h4>Skills</h4>
+                <ul class="fa-ul">
+                    <li v-for="skill in skills" :key="skill">
+                        <span class="fa-li"><i :class="'fa-solid ' + skill.icon"></i></span>
+                        {{skill.text}}
+                    </li>
+                </ul>
+                <small>&copy; {{today.toLocaleDateString('en', { year: 'numeric' })}} Thomas Deitz</small>
+            </section>
+        </aside>
+        <section id="resume">
+            <header>
+                <h2><strong>{{first}} {{last}}</strong></h2>
+                <small>{{subtitle}}</small>
+            </header>
+            <article id="about">
+                <p v-for="p in about" :key="p">{{p}}</p>
+                <div v-if="quote.visible" class="quote">
+                    <blockquote></blockquote>
+                    <cite></cite>
                 </div>
-                <p>
-                    When I am not working you very well might find me wiping out on my road bike, messing around with
-                    music in my home studio, serving at church, spending time with my family, or just cuddling with
-                    my dog.
-                </p>
             </article>
-            <aside>
-                <section>
-                    <h4>Experiences</h4>
-                    <article>
-                        <small class="date"><em>June 2023 – Nov 2023</em></small>
-                        <strong>Senior User Experience Contractor</strong>
-                        <small><em>Pacific Life</em></small>
-                        <!-- <p>
-                            <small>I drove UX from the ground up, using lean UX ideas as a framework. I mentor a small group of UX professionals that advocates for users during the development process as embedded team members.</small>
-                        </p> -->
-                    </article>
-                    <article>
-                        <small class="date"><em>June 2023 – Nov 2023</em></small>
-                        <strong>Senior User Experience Contractor</strong>
-                        <small><em>Novir</em></small>
-                        <!-- <p>
-                            <small>I drove UX from the ground up, using lean UX ideas as a framework. I mentor a small group of UX professionals that advocates for users during the development process as embedded team members.</small>
-                        </p> -->
-                    </article>
-                    <article>
-                        <small class="date"><em>Oct 2021 – Feb 2023</em></small>
-                        <strong>Senior UX Lead</strong>
-                        <small><em>Layer One Media</em></small>
-                        <!-- <p>
-                            <small>I drove UX from the ground up, using lean UX ideas as a framework. I mentor a small group of UX professionals that advocates for users during the development process as embedded team members.</small>
-                        </p> -->
-                    </article>
-                    <article>
-                        <small class="date"><em>Aug 2009 – Present</em></small>
-                        <strong>Designer & Developer</strong>
-                        <small><em>Thomas Deitz - Freelance</em></small>
-                        <!-- <p>
-                            <small>I work with small businesses to help them understand their audience and deliver beautiful, functional solutions.</small>
-                        </p> -->
-                    </article>
-                    <article>
-                        <small class="date"><em>May 2021 – Oct 2021</em></small>
-                        <strong>Senior Design Consultant</strong>
-                        <small><em>Centare</em></small>
-                        <!-- <p>
-                            <small>I drove UX from the ground up, using lean UX ideas as a framework. I mentor a small group of UX professionals that advocates for users during the development process as embedded team members.</small>
-                        </p> -->
-                    </article>
-                    <article>
-                        <small class="date"><em>Oct 2018 – May 2021</em></small>
-                        <strong>Managing Director,<br /> User Experience</strong>
-                        <small><em>HealthChampion</em></small>
-                        <!-- <p>
-                            <small>I drove UX from the ground up, using lean UX ideas as a framework. I mentor a small group of UX professionals that advocates for users during the development process as embedded team members.</small>
-                        </p> -->
-                    </article>
-                    <article>
-                        <small class="date"><em>Aug 2012 – Oct 2018</em></small>
-                        <strong>User Experience</strong>
-                        <small><em>Centare</em></small>
-                        <!-- <p>
-                            <small>I helped define the UX process and advocated for UX across the company by empowering teams to practice user centered development.</small>
-                        </p> -->
-                    </article>
-                    <!-- <article>
-                        <small class="date"><em>Sep 2006 – Aug 2012</em></small>
-                        <strong>Digital Artist</strong>
-                        <small><em>Elmbrook Church</em></small>
-                        <p>
-                            <small>I worked on all things communication that go into making a weekend church service happen on a large scale, including print, video, audio, and web.</small>
+            <section id="experiences">
+                <h4>Experiences</h4>
+                <ul class="fa-ul">
+                    <li class="experience" v-for="experience in experiences" :key="experience">
+                        <span class="fa-li"><i class="fa-regular fa-circle-check"></i></span>
+                        <div class="date"><small>{{experience.start}} – {{experience.end}}</small></div>
+                        <div><strong>{{experience.title}}</strong> // {{experience.employer}}</div>
+                        <p v-if="experience.description">
+                            <small>{{experience.description}}</small>
                         </p>
-                    </article> -->
-                </section>
-                <br/>
-                <section>
-                    <h4>Contact</h4>
-                    <article>
-                        <small><em>Address</em></small>
-                        <strong>1404 Bluebird Dr<br /> Oconomowoc, WI 53066</strong>
-                    </article>
-                    <article>
-                        <small><em>Phone</em></small>
-                        <strong>
-                            <a href="tel:2625678114" title="Call or text me.">262-567-8114</a>
-                        </strong>
-                    </article>
-                    <article>
-                        <small><em>Email</em></small>
-                        <strong>
-                            <a href="mailto:thomasjdeitz@gmail.com" title="Send me an email.">thomasjdeitz@gmail.com</a>
-                        </strong>
-                    </article>
-                </section>
-            </aside>
-        </main>
-    </section>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
 </body>
 
 </html>
